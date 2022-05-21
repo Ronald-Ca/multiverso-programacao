@@ -1,0 +1,46 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.cabecalho {
+  background-color: #202020;
+}
+
+.cabecalho > section {
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.cabecalho-logo {
+  width: 95vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  gap: 15px;
+  padding: 20px 0 20px 0;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.cabecalho section > img {
+  width: 30px;
+  height: 30px;
+  padding: 30px 30px;
+  border-left: 1px solid #e5e5e5;
+}
+
+.cabecalho .cabecalho-menu {
+  display: flex;
+  justify-content: center;
+  gap: 97px;
+  padding: 42px 0;
+}
+
+.cabecalho .cabecalho-menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
