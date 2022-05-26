@@ -96,12 +96,12 @@ main {
   margin-bottom: 30px;
 }
 
-.maratonas .container > div {
+.maratonas .container > .imagens {
   display: flex;
   justify-content: space-between;
 }
 
-.maratonas .container > div img {
+.maratonas .container > div.imagens img {
   width: 240px;
   height: 240px;
   border-radius: 2px;
@@ -109,11 +109,44 @@ main {
 }
 
 .visao-geral {
+  display: flex;
   background-color: #ffffff;
-  color: #2d2d2d;
+  padding: 60px;
+  box-sizing: border-box;
 }
 
-.container.visao-geral h2 {
-  padding-top: 50px;
+.visao-geral.container div h2 {
+  font-size: 30px;
+  font-weight: 700;
   color: #2d2d2d;
+  margin-bottom: 50px;
+}
+
+.visao-geral.container div p {
+  line-height: 20px;
+  margin-top: 15px;
+  color: #151515;
+}
+
+.visao-geral.container div h3 {
+  font-size: 20 px;
+  color: #767676;
+  text-transform: uppercase;
+  margin: 50px 0 10px 0;
+  font-weight: 700;
+}
+
+.visao-geral.container div ul {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  gap: 10px;
+}
+
+.visao-geral.container div b {
+  font-weight: 700;
+}
+
+.poster img {
+  height: 460px;
 }
