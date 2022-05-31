@@ -217,6 +217,105 @@ function pegarCardInformacoes4() {
   cardInformacoes.append(meuHeader, ul, meuHeader2, ul2);
 }
 
+//----------------------------------------------------------------------------------------------------------------------//
+
+//Button 5
+function pegarCardInformacoes5() {
+  const cardInformacoes = document.getElementById("modulo-descricao");
+  cardInformacoes.innerHTML = "";
+
+  const meuHeader = document.createElement("h4");
+
+  meuHeader.innerText = "HARD SKILLS";
+  meuHeader.classList.add("importante");
+
+  const listaHardSkills = [
+    "Python",
+    "Django",
+    "ORM",
+    "MongoDB",
+    "Amazon AWS",
+    "Migrations",
+    "Metodologias Ágeis",
+  ];
+
+  const ul = document.createElement("ul");
+
+  for (let cont = 0; cont < listaHardSkills.length; cont++) {
+    const li = document.createElement("li");
+    li.innerText = listaHardSkills[cont];
+
+    ul.append(li);
+  }
+
+  const meuHeader2 = document.createElement("h4");
+  meuHeader2.innerText = "SOFT SKILLS E PREPARAÇÃO PARA O MERCADO DE TRABALHO";
+  meuHeader2.classList.add("importante");
+
+  const listaHardSkills2 = [
+    "Adaptação a novos ambientes de trabalho",
+    "Persistência",
+  ];
+
+  const ul2 = document.createElement("ul");
+
+  for (let cont = 0; cont < listaHardSkills2.length; cont++) {
+    const li = document.createElement("li");
+    li.innerText = listaHardSkills2[cont];
+
+    ul2.append(li);
+  }
+
+  cardInformacoes.append(meuHeader, ul, meuHeader2, ul2);
+}
+
+//----------------------------------------------------------------------------------------------------------------------//
+
+//Button 6
+function pegarCardInformacoes6() {
+  const cardInformacoes = document.getElementById("modulo-descricao");
+  cardInformacoes.innerHTML = "";
+
+  const meuHeader = document.createElement("h4");
+
+  meuHeader.innerText = "HARD SKILLS";
+  meuHeader.classList.add("importante");
+
+  const listaHardSkills = ["Trilha de empregabilidade"];
+
+  const ul = document.createElement("ul");
+
+  for (let cont = 0; cont < listaHardSkills.length; cont++) {
+    const li = document.createElement("li");
+    li.innerText = listaHardSkills[cont];
+
+    ul.append(li);
+  }
+
+  const meuHeader2 = document.createElement("h4");
+  meuHeader2.innerText = "SOFT SKILLS E PREPARAÇÃO PARA O MERCADO DE TRABALHO";
+  meuHeader2.classList.add("importante");
+
+  const listaHardSkills2 = [
+    "Construção de portfólio",
+    "Planejamento de carreira",
+    "Pitch pessoal",
+    "Simulações de entrevista",
+  ];
+
+  const ul2 = document.createElement("ul");
+
+  for (let cont = 0; cont < listaHardSkills2.length; cont++) {
+    const li = document.createElement("li");
+    li.innerText = listaHardSkills2[cont];
+
+    ul2.append(li);
+  }
+
+  cardInformacoes.append(meuHeader, ul, meuHeader2, ul2);
+}
+
+// Função de click dos botões
 function adicionaClick() {
   const botao = document.getElementById("primeiroBotao");
   botao.addEventListener("click", pegarCardInformacoes);
@@ -226,6 +325,10 @@ function adicionaClick() {
   botao3.addEventListener("click", pegarCardInformacoes3);
   const botao4 = document.getElementById("quartoBotao");
   botao4.addEventListener("click", pegarCardInformacoes4);
+  const botao5 = document.getElementById("quintoBotao");
+  botao5.addEventListener("click", pegarCardInformacoes5);
+  const botao6 = document.getElementById("sextoBotao");
+  botao6.addEventListener("click", pegarCardInformacoes6);
 }
 
 adicionaClick();
