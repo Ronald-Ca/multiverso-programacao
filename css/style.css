@@ -158,6 +158,7 @@ main {
   background-color: #151515;
   display: flex;
   justify-content: center;
+  padding-bottom: 60px;
 }
 
 .modulos > .container > h2 {
@@ -185,6 +186,7 @@ main {
   background-position: center;
   width: 120px;
   height: 40px;
+  cursor: pointer;
 }
 
 #modulo-descricao {
@@ -192,6 +194,7 @@ main {
   width: 100%;
   height: 500px;
   background-color: #ffffff;
+  display: none;
 }
 
 footer {

@@ -1,3 +1,76 @@
+const btn = document.getElementById("primeiroBotao");
+const container = document.getElementById("modulo-descricao");
+let lastButton = null;
+
+btn.addEventListener("click", function () {
+  if (container.style.display === "block" && lastButton === 1) {
+    container.style.display = "none";
+  } else {
+    container.style.display = "block";
+  }
+  lastButton = 1;
+});
+
+const btn2 = document.getElementById("segundoBotao");
+const container2 = document.getElementById("modulo-descricao");
+
+btn2.addEventListener("click", function () {
+  if (container.style.display === "block" && lastButton === 2) {
+    container.style.display = "none";
+  } else {
+    container.style.display = "block";
+  }
+  lastButton = 2;
+});
+
+const btn3 = document.getElementById("terceiroBotao");
+const container3 = document.getElementById("modulo-descricao");
+
+btn3.addEventListener("click", function () {
+  if (container.style.display === "block" && lastButton === 3) {
+    container.style.display = "none";
+  } else {
+    container.style.display = "block";
+  }
+  lastButton = 3;
+});
+
+const btn4 = document.getElementById("quartoBotao");
+const container4 = document.getElementById("modulo-descricao");
+
+btn4.addEventListener("click", function () {
+  if (container.style.display === "block" && lastButton === 4) {
+    container.style.display = "none";
+  } else {
+    container.style.display = "block";
+  }
+  lastButton = 4;
+});
+
+const btn5 = document.getElementById("quintoBotao");
+const container5 = document.getElementById("modulo-descricao");
+
+btn5.addEventListener("click", function () {
+  if (container.style.display === "block" && lastButton === 5) {
+    container.style.display = "none";
+  } else {
+    container.style.display = "block";
+  }
+  lastButton = 5;
+});
+
+const btn6 = document.getElementById("sextoBotao");
+const container6 = document.getElementById("modulo-descricao");
+
+btn6.addEventListener("click", function () {
+  if (container.style.display === "block" && lastButton === 6) {
+    container.style.display = "none";
+  } else {
+    container.style.display = "block";
+  }
+  lastButton = 6;
+});
+
 //Button 1
 function pegarCardInformacoes() {
   //Procurar no meu documento HTML, um elemento com esse ID: ""
